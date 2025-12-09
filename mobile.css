@@ -1,0 +1,6 @@
+/* mobile-specific tweaks */
+@media only screen and (max-width:480px) {
+  .container { padding:0.8rem; margin:1rem; }
+  .hero { padding:1rem; }
+  .site-title { font-size:1.4rem; }
+}

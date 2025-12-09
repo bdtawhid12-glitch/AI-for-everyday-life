@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Learn Premium — How to utilize AI</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobile.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  
+<nav class="main-nav">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about-ai.html">About AI</a></li>
+    <li><a href="applications.html">Applications</a></li>
+    <li><a href="ai-future.html">AI Future</a></li>
+    <li><a href="learn-premium.html">Learn Premium</a></li>
+    <li><a href="contactus.html">Contact Us</a></li>
+	<li><a href="about-me.html">About Me</a></li>
+
+  </ul>
+</nav>
+
+  <main class="contact-container">
+    <h1>Contact Us</h1>
+    <p>If you have questions, feedback, or ideas, feel free to reach out using the form below.</p>
+
+    <form class="contact-form" onsubmit="submitForm(event)">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p id="confirmation" class="confirmation"></p>
+  </main>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      document.getElementById("confirmation").textContent =
+        "Your message has been sent! We will get back to you soon.";
+    }
+  </script>
+<footer class="site-footer">
+  <p>25224539 – Nabil Tawhid Ahmed</p>
+</footer>
+</body>
+</html>
